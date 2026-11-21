@@ -25,9 +25,9 @@ def render_rad_explorer(dataset):
         return
 
     variable_options = {
-        f'{item["group"]} | {item["variable"]} | {item["shape']}': item
-        for item in numeric_items
-    }
+    f"{item['group']} | {item['variable']} | {item['shape']}": item
+    for item in numeric_items
+}
 
     selected_label = st.selectbox(
         "Select RAD variable",
